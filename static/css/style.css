@@ -1,0 +1,97 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Легкий сірий фон */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff; /* Білий фон для контенту */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #2c3e50; /* Темно-синій для заголовка */
+}
+
+/* Стилі для сітки товарів */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два ряди товарів */
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Легке збільшення картки при наведенні */
+}
+
+/* Стилі для зображень товарів */
+.product-image-container {
+    width: 100%;
+    height: 200px; /* Фіксована висота для картинок */
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Картинка заповнює весь контейнер */
+}
+
+/* Стилі для інформації про товар */
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #2c3e50; /* Текст темного кольору для заголовків */
+}
+
+.product-info p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.product-info .price {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #e74c3c; /* Червоний колір для ціни */
+    margin-top: 10px;
+}
+
+.product-info a {
+    text-decoration: none;
+}
+
+.product-info button {
+    padding: 10px 20px;
+    background-color: #3498db; /* Синя кнопка */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.product-info button:hover {
+    background-color: #2980b9; /* Трохи темніша синя кнопка при наведенні */
+}
